@@ -18,15 +18,15 @@ modern-cli requires at least version 6 of Node, please upgrade
 ## Usage
 
 ```sh
-npm install please-upgrade-node
+npm install please-upgrade-node-fork
 ```
 
-Add `please-upgrade-node` at the top of your CLI
+Add `please-upgrade-node-fork` at the top of your CLI
 
 ```js
 #!/usr/bin/env node
 const pkg = require('./package.json')
-require('please-upgrade-node')(pkg) // <- Must run BEFORE requiring any other modules
+require('please-upgrade-node-fork')(pkg) // <- Must run BEFORE requiring any other modules
 
 // ...
 ```
